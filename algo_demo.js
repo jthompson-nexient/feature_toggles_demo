@@ -1,9 +1,8 @@
 import featureFlag from './aws_sdk_flag_utils.js'
 
-/* All other modules in you application use this function, which calls 
+/* All other modules in your application use this function, which calls 
 one of your two implementations depending on the feature_flag being 
 set to true or false. */
-
 async function usefull_utility_algorithm() {
     if (await featureFlag("improved_function_algorithm_key")) {
         return improved_algorithm(7)
