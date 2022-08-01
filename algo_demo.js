@@ -13,8 +13,8 @@ async function usefull_utility_algorithm(input_number) {
 
 // New and improved algorithm
 function improved_algorithm(x) {
-    console.log("\n!!! Improved Algorithm !!!")
     if (x == 0) {
+        console.log("\n!!! Improved Algorithm !!!")
         return 1;
     } else {
         return x * improved_algorithm(x - 1);

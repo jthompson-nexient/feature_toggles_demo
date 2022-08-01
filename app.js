@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
     render_home_page(res)
 })
 
-app.listen("3001", () => {
+app.listen("3000", () => {
     console.log("Listening")
 })
 
@@ -22,7 +22,7 @@ async function render_home_page(res) {
 }
 
 function new_home_page(res) {
-    return res.send("NEEEWWWWWWWW")
+    return res.send("New Feature!!")
 }
 
 function old_home_page(res) {
