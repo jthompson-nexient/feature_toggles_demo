@@ -1,5 +1,5 @@
 import express from 'express'
-import featureFlags from './custom_feature_flag.js'
+import featureFlags from './aws_sdk_flag_utils.js'
 
 const app = express()
 

@@ -1,4 +1,4 @@
-import featureFlag from './custom_feature_flag.js'
+import featureFlag from './aws_sdk_flag_utils.js'
 
 /* All other modules in you application use this function, which calls 
 one of your two implementations depending on the feature_flag being 
