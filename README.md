@@ -1,4 +1,4 @@
-# feature_toggles_demo
+# Feature Toggles Demo
 ## Prerequisites:
 1. You must have your AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY 
 environment variables set in order for this code to work. 
