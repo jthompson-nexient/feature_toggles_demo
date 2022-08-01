@@ -1,5 +1,4 @@
 import {
-    AppConfigData,
     AppConfigDataClient,
     BadRequestException,
     GetLatestConfigurationCommand,
@@ -54,19 +53,6 @@ const featureFlag = async(flag) => {
         }
     }
 }
-
-async function test_flag() {
-    if (await featureFlag("improved_function_algorithm_key")) {
-        console.log("Feature Flag is true..")
-        console.log("Using the Alpha version feature of our app.")
-    } else {
-        console.log("Feature Flag is false..")
-        console.log("Using the old version.")
-    }
-}
-
-test_flag()
-
 
 export default featureFlag
 
