@@ -3,11 +3,11 @@ import featureFlag from './aws_sdk_flag_utils.js'
 /* All other modules in your application use this function, which calls 
 one of your two implementations depending on the feature_flag being 
 set to true or false. */
-async function usefull_utility_algorithm() {
+async function usefull_utility_algorithm(input_number) {
     if (await featureFlag("improved_function_algorithm_key")) {
-        return improved_algorithm(7)
+        return improved_algorithm(input_number)
     } else {
-        return legacy_algorithm(7)
+        return legacy_algorithm(input_number)
     }
 }
 
@@ -34,6 +34,6 @@ function legacy_algorithm(x) {
 
 // testing...
 (async function() {
-    const my_factorial = await usefull_utility_algorithm()
+    const my_factorial = await usefull_utility_algorithm(7)
     console.log("Answer:", my_factorial)
 })()
